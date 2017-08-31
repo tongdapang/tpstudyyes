@@ -32,12 +32,28 @@ class GoodsController extends Controller {
                 {
                     if($_FILES['goods_image']['error'] == 0) //图片接收成功
                     {
+                        // 上传图片部分
                         $config = array(
                             'rootPath'      =>  './application/public/uploads/', 
                             );
                         $upload = new \Think\Upload($config);
                         $info = $upload->uploadOne($_FILES['goods_image']);
                         $data['goods_big_img'] = $info['savepath'].$info['savename'];   //放入数据路的图片路径  通过上传成功的返回信息取得
+                        
+//                        生成缩略图部分
+                        $img =new \Think\Image();
+                        //  1.打开图片
+                        $img->open($upload->rootPath.$data['goods_big_img']);
+                        //  2.压缩图片
+                        $img->thumb(200,200);
+                        //  3.保存
+                        $small_image = $upload->rootPath.$info['savepath'].'small_'.$info['savename'];
+                        $img->save($small_image);
+                        //  4.放入$data
+                        $data['goods_small_img'] = $info['savepath'].'small_'.$info['savename'];
+                                
+                                
+                        
                         if($goods->add($data))
                         {
                             $this->success('添加成功','showlist',3);
