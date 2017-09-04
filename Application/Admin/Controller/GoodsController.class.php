@@ -4,10 +4,25 @@ use Think\Controller;
 class GoodsController extends Controller {
 
 	public function showlist(){
-		$list = M('goods')->order('goods_id desc')->select();
+//            分页所需数值配置
+            $totalRows = M('goods')->count();       //总记录数
+            $page = new \Think\Page($totalRows, 5); //实例化
+            $page->rollPage = 5;
+            $page->setConfig('prev', '【上一页】');
+            $page->setConfig('next', '【下一页】');
+            $page->setConfig('first', '【首页】');
+            $page->setConfig('last', '【尾页】');
+           $page->lastSuffix=false;
 
-		$this->assign('list',$list);
-		$this->display();
+            $firstRow = $page->firstRow;             //取值所需的limit值
+            $listRows = $page->listRows;
+            $list = M('goods')->limit($firstRow,$listRows)->select();
+            $pageShow = $page->show();              //分页显示代码
+
+            $this->assign('pageShow',$pageShow);
+            $this->assign('list',$list);
+            
+            $this->display();
 	}
 
 	public function add(){
