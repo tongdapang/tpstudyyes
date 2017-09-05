@@ -2,5 +2,5 @@
 return array(
 	//'配置项'=>'配置值'
 	'LOAD_EXT_CONFIG'		=>	'db',
-	'URL_MODEL'             => 0   
+	'URL_MODEL'             => 1   
 );

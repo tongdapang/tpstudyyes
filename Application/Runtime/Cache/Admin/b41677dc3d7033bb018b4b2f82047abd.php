@@ -18,7 +18,7 @@
                         <li class="user_top_r"></li></ul>
                      
                 </dd><dd id="user_main">
-                    <form action="/index.php?m=Admin&amp;c=Login&amp;a=login" method="post">
+                    <form action="/index.php/admin/login/login" method="post">
                         <ul>
                             <li class="user_main_l"></li>
                             <li class="user_main_c">

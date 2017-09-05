@@ -13,6 +13,7 @@ class LoginController extends Controller {
                     $data = $manager->create();
                     $row = $manager->where($data)->find();
                     if($row){
+                        session('mg_id',$row['mg_id']);
                         $this->redirect('Manager/index');
                     }
                     else

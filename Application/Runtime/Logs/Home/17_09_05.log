@@ -1,0 +1,5 @@
+[ 2017-09-05T20:07:46+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.178959s ]
+
