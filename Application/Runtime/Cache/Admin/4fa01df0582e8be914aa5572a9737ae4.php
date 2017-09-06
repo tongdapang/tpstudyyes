@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
     <head>
         <meta http-equiv=content-type content="text/html; charset=utf-8" />
@@ -30,28 +30,22 @@
                         <tr><td height=10></td></tr>
                 </table>
                
-                <volist name="info1"  id="vo1" key="k">
-                    <table cellspacing=0 cellpadding=0 width=150 border=0>
+                <?php if(is_array($info1)): $k = 0; $__LIST__ = $info1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo1): $mod = ($k % 2 );++$k;?><table cellspacing=0 cellpadding=0 width=150 border=0>
                         <tr height=22>
                             <td style="padding-left: 30px" background=/Application/Admin/Public/img/menu_bt.jpg><a 
-                                    class=menuparent onclick=expand({$vo1.auth_id}) 
-                                    href="javascript:void(0);">{$vo1.auth_name}</a>
+                                    class=menuparent onclick=expand(<?php echo ($vo1["auth_id"]); ?>) 
+                                    href="javascript:void(0);"><?php echo ($vo1["auth_name"]); ?></a>
                           </td>
                    		</tr>
                         <tr height=4><td></td></tr>     
                       </table>
                       
-                      <table id=child{$vo1.auth_id} style="display: none" cellspacing=0 cellpadding=0  width=150 border=0>
-                      <volist name="info2" id="vo2">
-                      	<if condition="$vo2['auth_pid'] eq $vo1['auth_id']">  
-                        <tr height=20>
+                      <table id=child<?php echo ($vo1["auth_id"]); ?> style="display: none" cellspacing=0 cellpadding=0  width=150 border=0>
+                      <?php if(is_array($info2)): $i = 0; $__LIST__ = $info2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i; if($vo2['auth_pid'] == $vo1['auth_id']): ?><tr height=20>
                             <td align=middle width=30><img height=9 src="/Application/Admin/Public/img/menu_icon.gif" width=9></td>                         
-                            <td><a class=menuchild href="#" target=main>{$vo2.auth_name}</a> </td> 
-                        </tr>
-                        </if>
-                      </volist>
-                      </table>
-              </volist>
+                            <td><a class=menuchild href="#" target=main><?php echo ($vo2["auth_name"]); ?></a> </td> 
+                        </tr><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                      </table><?php endforeach; endif; else: echo "" ;endif; ?>
                 
                 
                 
