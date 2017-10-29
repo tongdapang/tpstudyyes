@@ -1,0 +1,110 @@
+[ 2017-10-22T10:06:53+08:00 ] 127.0.0.1 /index.php/admin/manager
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007501s ]
+
+[ 2017-10-22T10:06:53+08:00 ] 127.0.0.1 /index.php/Admin/Manager/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-10-22T10:06:54+08:00 ] 127.0.0.1 /index.php/Admin/Manager/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+
+[ 2017-10-22T10:06:54+08:00 ] 127.0.0.1 /index.php/Admin/Manager/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+
+[ 2017-10-22T12:05:54+08:00 ] 127.0.0.1 /index.php/admin/manager
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+
+[ 2017-10-22T12:05:54+08:00 ] 127.0.0.1 /index.php/Admin/Manager/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-10-22T12:05:54+08:00 ] 127.0.0.1 /index.php/Admin/Manager/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2017-10-22T12:05:54+08:00 ] 127.0.0.1 /index.php/Admin/Manager/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+
+[ 2017-10-22T12:26:26+08:00 ] 127.0.0.1 /index.php/Admin/Manager/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001448s ]
+
+[ 2017-10-22T12:27:40+08:00 ] 127.0.0.1 /index.php/admin/manager
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-10-22T12:27:40+08:00 ] 127.0.0.1 /index.php/Admin/Manager/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+
+[ 2017-10-22T12:27:40+08:00 ] 127.0.0.1 /index.php/Admin/Manager/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+
+[ 2017-10-22T12:27:40+08:00 ] 127.0.0.1 /index.php/Admin/Manager/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+
+[ 2017-10-22T12:27:47+08:00 ] 127.0.0.1 /index.php/Admin/Manager/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+
+[ 2017-10-22T12:28:00+08:00 ] 127.0.0.1 /index.php/admin/goods/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001424s ]
+
+[ 2017-10-22T12:28:07+08:00 ] 127.0.0.1 /index.php/Admin/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2017-10-22T12:28:16+08:00 ] 127.0.0.1 /index.php/Admin/Goods/update/goods_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+
+[ 2017-10-22T12:33:05+08:00 ] 127.0.0.1 /index.php/admin/manager
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+
+[ 2017-10-22T12:33:05+08:00 ] 127.0.0.1 /index.php/Admin/Manager/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+
+[ 2017-10-22T12:33:05+08:00 ] 127.0.0.1 /index.php/Admin/Manager/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+
+[ 2017-10-22T12:33:05+08:00 ] 127.0.0.1 /index.php/Admin/Manager/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-10-22T12:33:21+08:00 ] 127.0.0.1 /index.php/Admin/Manager/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+

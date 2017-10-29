@@ -16,7 +16,6 @@ class ManagerController extends Controller {
             $role = M('role')->find($manager['mg_role_id']);
             $auth_ids = $role['role_auth_ids'];
             $info = M('auth')->where("auth_id in ($auth_ids)")->select();
-            var_dump($info);die;
             $this->display();
         }
          public function right(){
