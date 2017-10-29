@@ -19,7 +19,7 @@
         <div></div>
 
         <div style="font-size: 13px;margin: 10px 5px">
-            <form action="/index.php/Admin/Goods/update/goods_id/2" method="post" enctype="multipart/form-data">
+            <form action="/index.php/Admin/Goods/update/goods_id/137" method="post" enctype="multipart/form-data">
             <table border="1" width="100%" class="table_a">
                 <tr>
                     <td>商品名称</td>
